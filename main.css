@@ -165,24 +165,26 @@ a{
     font-family: var(--font-ralway);
 }
 /* work section  */
+#works{
+    margin: 50px 0;
+}
 #works .grid {
-    grid-column-gap: 34px;
+    grid-gap: 10px;
 }
 #works h1{
     display: inline;
     font-family: var(--font-OpenSans);
     border-bottom: 2px solid black;
     text-transform: uppercase;
-}
-
-  
+} 
 #works div img {
-    width: 150px;
+    width: 140px;
 }
 #works div h2 {
     font-size: 14px;
     text-transform: uppercase;
     font-family: var(--font-ralway);
+    
 }
 #works div p {
     font-size: 13px;
@@ -192,15 +194,17 @@ a{
 #works div:nth-child(3),
 #works div:nth-child(5),
 #works div:nth-child(7) {
-    grid-column: 2/5;
+    grid-column: 2/7;
+    /* background-color: blue; */
 }
 /* 2nd column */
 #works div:nth-child(2),
 #works div:nth-child(4),
 #works div:nth-child(6),
 #works div:nth-child(8) {
-    grid-column: -2/-5;
-    /* justify-self: right; */
+    grid-column: -2/-7;
+    justify-self: right;
+    /* background-color: blue; */
 }
 /* our team section */
 #our_team div h1{
